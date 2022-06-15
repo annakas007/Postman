@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "635a3e41-8e0c-48b2-b6f6-ca8b6a98edc3",
+		"name": "Home_Work1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18235276"
+	},
+	"item": [
+		{
+			"name": "EP1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/get_method?name=Ratmir&age=14",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"get_method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Ratmir"
+						},
+						{
+							"key": "age",
+							"value": "14"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Yaroslav",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "17",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "2000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}user_info_3",
+					"host": [
+						"{{url}}user_info_3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}object_info_1?name=Andrew&age=40&weight=89",
+					"host": [
+						"{{url}}object_info_1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Andrew"
+						},
+						{
+							"key": "age",
+							"value": "40"
+						},
+						{
+							"key": "weight",
+							"value": "89"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}object_info_2?name=Jon&age=45&salary=2800",
+					"host": [
+						"{{url}}object_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Jon"
+						},
+						{
+							"key": "age",
+							"value": "45"
+						},
+						{
+							"key": "salary",
+							"value": "2800"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"var cat_age = jsonData.family.pets.cat.age\r",
+							"pm.environment.set(\"cat_age\", cat_age);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}object_info_3?name=Kate&age=29&salary=1000",
+					"host": [
+						"{{url}}object_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Kate"
+						},
+						{
+							"key": "age",
+							"value": "29"
+						},
+						{
+							"key": "salary",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}object_info_4?age=32&name=Gleb&salary=420",
+					"host": [
+						"{{url}}object_info_4"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "32"
+						},
+						{
+							"key": "name",
+							"value": "Gleb"
+						},
+						{
+							"key": "salary",
+							"value": "420"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Kristina",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "16",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "860",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}user_info_2",
+					"host": [
+						"{{url}}user_info_2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
