@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "77c227db-4bfe-41dc-80d7-2aa200de6278",
+		"name": "group_32",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18235276"
+	},
+	"item": [
+		{
+			"name": "/get_method",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip_port}}get_method?name=Hanna&age=41",
+					"host": [
+						"{{ip_port}}get_method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Hanna"
+						},
+						{
+							"key": "age",
+							"value": "41"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_info_3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Henry",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "42",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "2500",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{ip_port}}user_info_3",
+					"host": [
+						"{{ip_port}}user_info_3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "object_info_1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip_port}}object_info_1?name=Sam&age=390&weight=54",
+					"host": [
+						"{{ip_port}}object_info_1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Sam"
+						},
+						{
+							"key": "age",
+							"value": "390"
+						},
+						{
+							"key": "weight",
+							"value": "54"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "object_info_2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip_port}}object_info_2?name=Felix&age=16&salary=78",
+					"host": [
+						"{{ip_port}}object_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Felix"
+						},
+						{
+							"key": "age",
+							"value": "16"
+						},
+						{
+							"key": "salary",
+							"value": "78"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "object_info_3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip_port}}object_info_3?name=Jak&age=90&salary=100",
+					"host": [
+						"{{ip_port}}object_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Jak"
+						},
+						{
+							"key": "age",
+							"value": "90"
+						},
+						{
+							"key": "salary",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "object_info_4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip_port}}object_info_4?name=Persic&age=27&salary=6000",
+					"host": [
+						"{{ip_port}}object_info_4"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Persic"
+						},
+						{
+							"key": "age",
+							"value": "27"
+						},
+						{
+							"key": "salary",
+							"value": "6000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_info_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Teapot",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "90",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "00700",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{ip_port}}user_info_2",
+					"host": [
+						"{{ip_port}}user_info_2"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
